@@ -914,14 +914,22 @@ a {
     #about .service-flow-diagram li {
         float: none;
         width: 180px;
+        height: 210px;
         margin: 0;
         margin-bottom: 10px;
+        padding: 20px 0 0 0;
+        background: #034784 url(../img/ic_service_flow_01.png) no-repeat center 130px;
+        background-size: 120px 80px;
+    }
+    #about .service-flow-diagram li .step {
+        font-size: 30px;
+        margin-bottom: 20px;
     }
     #about .service-flow-diagram2 {
         width: 100px;
-        height: 1340px;
+        height: 1192px;
         background: url(../img/img_service_flow_mobile.png) no-repeat;
-        background-size: 100px 1340px;
+        background-size: 100px 1215px;
         font-size: 12px;
         position: absolute;
         top: 130px;
@@ -930,24 +938,27 @@ a {
     #about .service-flow-diagram2 li {
         float: none;
         width: 100px;
-        height: 142px;
+        height: 114px;
         padding: 118px 0 0 5px;
         margin-right: 0;
         margin-bottom: 10px;
     }
     #about .service-flow-diagram2 li:nth-child(2) {
         width: 100px;
-        height: 760px;
+        height: 670px;
     }
     #about .service-flow-diagram2 li:nth-child(2) p:first-of-type {
         text-align: center;
         padding-left: 0;
-        margin-bottom: 690px;
+        margin-bottom: 600px;
         text-indent: 10px;
     }
     #about .service-flow-diagram2 li:nth-child(2) p:last-of-type {
         text-align: center;
         padding-right: 0;
+    }
+    #about .service-flow-diagram2 li:nth-child(3) {
+        padding: 110px 0 0 5px;
     }
 
     /* Sphere Demo */
