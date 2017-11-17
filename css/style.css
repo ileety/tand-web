@@ -909,7 +909,6 @@ a {
         position: relative;
     }
     #about .service-flow-diagram {
-        float: left;
         width: 200px;
     }
     #about .service-flow-diagram li {
@@ -922,9 +921,10 @@ a {
         height: 1340px;
         background: url(../img/img_service_flow_mobile.png) no-repeat;
         background-size: 100px 1340px;
+        font-size: 12px;
         position: absolute;
         top: 130px;
-        right: -100px;
+        right: -90px;
     }
     #about .service-flow-diagram2 li {
         float: none;
