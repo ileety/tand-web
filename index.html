@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" />
+    <title>tan.D</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <!--[if lt IE]><link rel="stylesheet" href="./css/style_ie.css" type="text/css"><![endif]-->
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) {
+                $("#header").addClass("change");
+                $(".scroll-hand").addClass("scroll");
+            } else {
+                $("#header").removeClass("change");
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".m-menu").click(function () {
+              $("#header .login").toggle();
+            });
+            $("#header h1 a").click(function() {
+                $('html,body').animate({scrollTop:0}, 1000);
+                return false;
+             });
+            $("#aboutMenu").click(function() {
+                var position = $('#about').offset();
+                $('html,body').animate({scrollTop:position.top-78}, 1000);
+             });
+            $("#productMenu").click(function() {
+                var position = $('#product').offset();
+                $('html,body').animate({scrollTop:position.top-78}, 1000);
+             });
+            $("#memberMenu").click(function() {
+                var position = $('#member').offset();
+                $('html,body').animate({scrollTop:position.top-78}, 1000);
+             });
+            $("#contactMenu").click(function() {
+                var position = $('#contact').offset();
+                $('html,body').animate({scrollTop:position.top-78}, 1000);
+             });
+            
+          });
+    </script>
+</head>
+<body>
+    
+    <div id="container">
+        
+        <!-- Header -->
+        <div id="header" class="clearfix">
+            <h1><a href=""><img src="./img/logo_tand_black.svg" alt="tan.D Logo"></a></h1>
+            <div class="m-menu"></div>
+            <div class="gnb">
+                <ul class="clearfix">
+                    <li><a href="#" id="aboutMenu">About</a></li>
+                    <li><a href="#" id="productMenu">Product</a></li>
+                    <li><a href="#" id="memberMenu">Member</a></li>
+                    <li><a href="#" id="contactMenu">Contact</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul class="clearfix">
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //Header -->
+        
+        <hr>
+        
+        <!-- Main -->
+        <div id="main">
+            
+            <!-- Main Visual -->   
+            <div id="mainVisual">
+                <div class="wrap">
+                    <h2><img src="./img/logo_tand_black.svg" alt="tan.D Logo"></h2>
+                    <p>모바일 사용 행태 데이터 제공자(매체)와 사용자(마케터)가<br>
+                    상호 안전하고 효율적으로 협력할 수 있는<br>
+                    <strong>모바일 마케팅 데이터 거래 플랫폼</strong>을 제공합니다.</p>
+                    <div class="scroll-hand"></div>
+                </div>
+            </div>
+            <!-- //Main Visual -->
+            
+            <!-- About -->
+            <div id="about">
+                <h2 class="blind">About</h2>
+                <div class="intro-wrap">
+                    <ul class="clearfix">
+                        <li>
+                            <h3>Technology</h3>
+                            <p>모바일 어플리케이션의 사용행태를<br> 
+                            분석하여 사용자의 다음 행동을 예측할 수<br>
+                            있는 분석 알고리즘을 제공합니다.</p>
+                        </li>
+                        <li>
+                            <h3>Big Data</h3>
+                            <p>일 이벤트(event) 10억 회 이상의<br> 
+                            데이터를 처리하여 효율인 검색과 분석이<br> 
+                            가능한 빅데이터 인프라를 제공합니다.</p>
+                        </li>
+                        <li>
+                            <h3>Easy to Use</h3>
+                            <p>마케터가 직접 데이터를 검색, 비교,<br> 
+                            분석하여 데이터 기반의 모바일 마케팅<br> 
+                            전략을 수립할 수 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap">
+                    <h3>About Sphere</h3>
+                    <img src="./img/img_diagram_about_sphere.jpg" alt="About Sphere Diagram" width="800">
+                </div>
+                <div class="wrap clearfix">
+                    <h3>Service Flow</h3>
+                    <ul class="service-flow-diagram clearfix">
+                        <li>
+                            <p class="step">1</p>
+                            <h4>비식별 데이터 수집</h4>
+                            <p>데이터 온보딩</p>
+                        </li>
+                        <li>
+                            <p class="step">2</p>
+                            <h4>실시간 분석</h4>
+                            <p>데이터 처리 인프라</p>
+                        </li>
+                        <li>
+                            <p class="step">3</p>
+                            <h4>마케팅 키워드 추출</h4>
+                            <p>데이터 Science</p>
+                        </li>
+                        <li>
+                            <p class="step">4</p>
+                            <h4>Audience</h4>
+                            <p>광고주 Dashboard</p>
+                        </li>
+                        <li>
+                            <p class="step">5</p>
+                            <h4>추적 광고 집행</h4>
+                            <p>광고 지면 제휴</p>
+                        </li>
+                    </ul>
+                    <ul class="service-flow-diagram2 clearfix">
+                        <li>매체사</li>
+                        <li>
+                            <p>데이터 비용</p>
+                            <p>잠재 고객</p>
+                        </li>
+                        <li>브랜드</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //About -->
+            
+            <hr>
+            
+            <!-- Sphere Demo -->
+            <div id="sphereDemo">
+                <h2><img src="./img/logo_shpere_circle.svg" alt="Sphere Logo"></h2>
+                <p>지금 SPHERE를 체험해 보세요.</p>
+                <div><a href="#">DEMO 바로가기</a></div>
+            </div>
+            <!-- //Sphere Demo -->
+            
+            <hr>
+            
+            <!-- Service -->
+            <div id="service">
+                <div class="wrap">
+                    <h2>Service</h2>
+                    <p>다양한 데이터 소스를 활용하여 목표 Audience 에 대한 입체적인 분석을 바탕으로 마케팅 전략을 수립할 수 있는 솔루션을 시장에 제공하고자 합니다.</p>
+                    <div class="audience-profile">
+                        <h3>Audience Profile</h3>
+                        <div><img src="./img/img_diagram_audience_profile.png" alt="Audience Profile" width="600"></div>
+                        <p>Machine 러닝을 통해 모바일 앱 설치 패턴, 접속 지역, 현재 관심사, 소득수준, 유사성, 연관성을 분석합니다.</p>
+                        <ul class="clearfix">
+                            <li>App 설치 패턴</li>
+                            <li>유사성</li>
+                            <li>연관성</li>
+                            <li>현재 관심사</li>
+                            <li>소득수준<br><em>(준비중)</em></li>
+                            <li>접속 지역<br><em>(준비중)</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //Service -->
+            
+            <hr>
+            
+            <!-- Member -->
+            <div id="member">
+                <div class="wrap">
+                    <h2>Member</h2>
+                    <ul class="clearfix">
+                        <li>
+                            <div class="img-wrap"><img src="./img/chanung_kim.png" alt="김찬웅"></div>
+                            <p>글로벌에서 활약하는 데이터 플랫폼으로<br> 성장하는 그날까지!!!</p>
+                            <h4>김찬웅</h4>
+                            <h5>Founder / CEO</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/chiyoung_ham.png" alt="함치영"></div>
+                            <p>미래는 데이터가 기업 최고의 부가가치가 될것입니다.<br> 
+                            변화하는 세계에 필요한 기술을 유연하게<br> 
+                            대처할 수 있는 TAND를 꿈꿔봅니다.</p>
+                            <h4>함치영</h4>
+                            <h5>CTO</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/sangeun_kim.png" alt="김상은"></div>
+                            <p>일주일에 3일!! 대신 일해줄 로봇 구합니다.<br>
+                            없으면 만들고...</p>
+                            <h4>김상은</h4>
+                            <h5>Senior Developer</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/seungphil_huh.png" alt="허승필"></div>
+                            <p>살아 숨쉬는 데이터가 여기 tand에 한데 이터요.</p>
+                            <h4>허승필</h4>
+                            <h5>Data Analyst</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/jongsuk_jin.png" alt="진종석"></div>
+                            <p>BIG DATA 분석을 통해 전략 인사이트를 도출하고,<br> 
+                            실행 및 검토를 통한 마케팅 최적화를<br> 
+                            실현하고 싶습니다.</p>
+                            <h4>진종석</h4>
+                            <h5>Marketing Director</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/jongmin_lee.png" alt="이종민"></div>
+                            <p>많은 사람들에게 도움이 되는 서비스를 재미있게<br> 
+                            만들고 있습니다~ 같이 가요 우리~</p>
+                            <h4>이종민</h4>
+                            <h5>Business Development Dircetor</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //Member -->
+            
+            <hr>
+            
+            <!-- Product -->
+            <div id="product">
+                <div class="wrap">
+                    <h2>Product</h2>
+                    <div>
+                        <h3>Marketer</h3>
+                        <p>뚜렷한 목적성을 가지고 있는 모바일 앱의 사용행태는 사용자의 다음 행동을 예측하게 해줍니다.<br>
+                        모바일 사용행태 데이터를 활용하여 잠재고객의 범위를 10배 이상으로 확대할 수 있습니다.<br>
+                        기존의 단순한 리타깃팅 전략을 넘어서는 입체적인 모바일 타깃팅 전략을 텐디의 스피어에서 수립해보세요.</p>
+                        <div class="dn-btn"><a href="#">Marketer 소개서 다운로드</a></div>
+                        <h4>Searchable Audience Find Related Apps App Install Pattern</h4>
+                        <ul class="app-install-pattern clearfix">
+                            <li>
+                                <div><img src="./img/img_pattern_flow_01.png" alt="App Install Pattern"></div>
+                                <p>Audience 생성</p>
+                            </li>
+                            <li>
+                                <div><img src="./img/img_pattern_flow_02.png" alt="App Install Pattern"></div>
+                                <p>선택 Audience의 연관 App 리스트 분석</p>
+                            </li>
+                            <li>
+                                <div><img src="./img/img_pattern_flow_03.png" alt="App Install Pattern"></div>
+                                <p>선택 Audience의 설치 비율을 비교/분석</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Data Partner</h3>
+                        <p>귀사의 데이터 자산의 가치를 극대화 하십시오.<br>
+                        매체 사용(Behavior)행태는 소중한 마케팅(타깃팅) 데이터로 활용됩니다.<br>
+                        우수한 데이터 고객은 데이터의 규모(Scale)와 다양성(Diversity)을 요구합니다.</p>
+                        <p>귀사의 데이터 자산과 텐디의 자산을 통합하여 데이터 고객이 만족할 수 있는 규모와 다양성을 제공할 수 있습니다.</p>
+                        <div class="dn-btn"><a href="#">Data Partner 소개서 다운로드</a></div>
+                        <ul class="data-partner-diagram clearfix">
+                            <li>
+                                <p>List</p>
+                                <h5>CUSTOMER</h5>
+                                <p>Data</p>
+                            </li>
+                            <li>
+                                <p>Audience</p>
+                                <h5>SPHERE</h5>
+                                <p>Analysis</p>
+                            </li>
+                            <li>
+                                <p>Valuable</p>
+                                <h5>CUSTOMER</h5>
+                                <p>Actionable Data</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Price 정책</h3>
+                        <div class="table-wrap">
+                            <table border="1" class="price-policy">
+                                <thead>
+                                    <tr class="subject">
+                                        <th width="112" rowspan="2"></th>
+                                        <th width="210" rowspan="2"></th>
+                                        <th width="138">Free</th>
+                                        <th width="138">Startup</th>
+                                        <th width="138">Pro</th>
+                                        <th width="138">Pro-</th>
+                                        <th width="138">Pro-Enterprise</th>
+                                        <th width="138">데이터 파트너 프리미엄</th>
+                                    </tr>
+                                    <tr>
+                                        <th>무료</th>
+                                        <th>월 10만원 (5 User)</th>
+                                        <th>월 50만원</th>
+                                        <th>월 100만원</th>
+                                        <th>별도 협의</th>
+                                        <th>파트너 계약 시 무료</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="4"  class="title">Dashboards</td>
+                                        <td class="second-title">모바일 앱</td>
+                                        <td rowspan="4"><span class="yes">Yes</span></td>
+                                        <td rowspan="4"><span class="yes">Yes</span></td>
+                                        <td rowspan="4"><span class="yes">Yes</span></td>
+                                        <td rowspan="4"><span class="yes">Yes</span></td>
+                                        <td rowspan="4">Custom UI</td>
+                                        <td rowspan="4"><span class="yes">Yes</span></td>
+                                    </tr>
+                                    <tr class="second-title">
+                                        <td class="second-title">연관도 분석</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="second-title">중복유저</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="second-title">설치패턴</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4" class="title">커스텀 분석</td>
+                                        <td class="second-title">타깃 Audience 제안(Excel)</td>
+                                        <td rowspan="4"><span class="no">No</span></td>
+                                        <td rowspan="3">광고주 수 1개</td>
+                                        <td rowspan="4">광고주 수 5개</td>
+                                        <td rowspan="4">무제한</td>
+                                        <td rowspan="4">API 지원 등</td>
+                                        <td rowspan="3">월간 리포트</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="second-title">유사 Audience 분석</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="second-title">고객 Audience 분석</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="second-title">기타 Adhoc 조사</td>
+                                        <td><span class="no">No</span></td>
+                                        <td><span class="no">No</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3" class="title"></td>
+                                        <td class="second-title">데이터리스트 접속</td>
+                                        <td rowspan="2"><span class="yes">Yes</span></td>
+                                        <td rowspan="3"><span class="yes">Yes</span></td>
+                                        <td rowspan="3"><span class="yes">Yes</span></td>
+                                        <td rowspan="3"><span class="yes">Yes</span></td>
+                                        <td rowspan="3"><span class="yes">Yes</span></td>
+                                        <td rowspan="3"><span class="yes">Yes</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="second-title">데이터 등록</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="second-title">소유 데이터 다운로드</td>
+                                        <td><span class="no">No</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">CAMPAIGN</td>
+                                        <td class="second-title"></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">ACCOUNT</td>
+                                        <td class="second-title"></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                        <td><span class="yes">Yes</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">광고집행 조건</td>
+                                        <td class="second-title">최소집행비용(매체비)</td>
+                                        <td>최소 월 500만원</td>
+                                        <td>최소 월 100만원</td>
+                                        <td>최소 월 500만원</td>
+                                        <td>제한없음</td>
+                                        <td>별도 협의</td>
+                                        <td>제한없음</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">수수료</td>
+                                        <td class="second-title">매체비 %</td>
+                                        <td>25%</td>
+                                        <td>25%</td>
+                                        <td>7.5%</td>
+                                        <td>7.5%</td>
+                                        <td>별도 협의</td>
+                                        <td>협의</td>
+                                    </tr>
+                                    <tr class="last">
+                                        <td class="title">광고운영</td>
+                                        <td class="second-title"></td>
+                                        <td>텐디 운영대행</td>
+                                        <td>텐디 운영대행</td>
+                                        <td>협의</td>
+                                        <td>협의</td>
+                                        <td>별도 협의</td>
+                                        <td>협의</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Product -->
+            
+            <hr>
+            
+            <!-- Contact -->
+            <div id="contact">
+                <div class="wrap">
+                    <h2>Contact</h2>
+                    <p>데이터 솔루션(SPHERE) 및 광고 진행은 아래 담당자에게 문의하세요.</p>
+                    <ul>
+                        <li>
+                            <h4>이종민</h4>
+                            <h5>Business Development Director</h5>
+                            <div><a href="mailto:jm@tand.kr?subject=데이터 솔루션 문의">jm@tand.kr</a></div>
+                        </li>
+                        <li>
+                            <h4>진종석</h4>
+                            <h5>Marketing Director</h5>
+                            <div><a href="mailto:jinjongsuk@tand.kr?subject=광고 문의">jinjongsuk@tand.kr</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //Contact -->
+            
+        </div>
+        <!-- //Main -->
+        
+        <hr>
+        
+        <!-- Footer -->
+        <div id="footer">
+            <h2 class="blind">Company Informations</h2>
+            <h3><img src="./img/logo_tand_black.svg" alt="tan.D Logo"></h3>
+            <ul>
+                <li>사업자 등록번호 : 721-88-00371</li>
+                <li>대표이사 : 김찬웅</li>
+                <li>06212 서울특별시 강남구 역삼동 708-33 벤처타워 301호 (주)텐디</li>
+                <li>02.2112.8150</li>
+            </ul>
+            <p>&copy; TAND. All rights reserved.</p>
+        </div>
+        <!-- //Footer -->
+        
+    </div>
+    
+</body>
+</html>

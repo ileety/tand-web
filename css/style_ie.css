@@ -1,0 +1,87 @@
+/* Main Visual */
+#mainVisual {
+    width: 100%;
+    height: 300px;
+    padding: 250px 0 0 0;
+    background: #000 url(../img/img_main_visual.jpg) no-repeat center;
+    background-size: 1920px 550px;
+    color: #fff;
+}
+#mainVisual h2 {
+    width: 210px;
+    height: 60px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../img/logo_tand_white.svg) no-repeat;
+    background-size: 210px 60px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+#mainVisual h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #e49958;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+#mainVisual p {
+    width: 500px;
+    line-height: 160%;
+    opacity: 1;
+}
+#mainVisual p strong {
+    color: #e49958;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
