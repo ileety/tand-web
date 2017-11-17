@@ -913,6 +913,7 @@ a {
     }
     #about .service-flow-diagram li {
         float: none;
+        width: 180px;
         margin: 0;
         margin-bottom: 10px;
     }
