@@ -772,6 +772,7 @@ a {
         min-width: 320px;
         height: auto;
         background-color: #fff;
+        padding: 20px 30px;
     }
     #header h1 {
         float: none;
@@ -834,7 +835,7 @@ a {
         height: 23px;
         background: url(../img/icon-menu.png) no-repeat;
         position: absolute;
-        top: 30px;;
+        top: 24px;;
         left: 26px;
     }
     .wrap {
@@ -842,7 +843,7 @@ a {
         box-sizing: border-box;
     }
     #main {
-        padding-top: 78px;
+        padding-top: 0;
     }
     #mainVisual .wrap {
         padding: 0 20px;
