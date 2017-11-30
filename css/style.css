@@ -685,6 +685,12 @@ a {
     color: #ff0000;
     margin-left: 20px;
 }
+.table-container h3 span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #ff0000;
+    margin-left: 20px;
+}
 .price-policy thead tr th .txt-small {
     word-spacing: -0.2em;
 }
