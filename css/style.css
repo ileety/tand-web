@@ -676,7 +676,10 @@ a {
 .table-container {
     margin-bottom: 80px;
 }
-.table-container h3 span {
+.table-container h4 {
+    font-size: 20px;
+}
+.table-container h4 span {
     font-size: 14px;
     font-weight: normal;
     color: #ff0000;
@@ -1105,9 +1108,9 @@ a {
         display: none;
     }
     .table-container {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
-    .table-container h3 {
+    .table-container h4 {
         display: none;
     }
     .view-table {
