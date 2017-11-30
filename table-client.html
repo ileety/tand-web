@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=yes">
+    <title>tan.D</title>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        html, body {
+            background-color: #f5f5f5 !important;
+        }
+        h3 {
+            font-size: 22px;
+            text-transform: uppercase;
+            margin: 30px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .price-policy {
+            margin: 0 auto;
+        }
+        .table-wrap {
+            display: block;
+        }
+        .table-container h3 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+                    
+        <!-- 광고주 약정 사항 -->
+        <div class="table-container">
+            <h3>광고주 약정 사항</h3>
+            <div class="table-wrap">
+                <table border="1" class="price-policy">
+                    <thead>
+                        <tr>
+                            <th width="200" rowspan="2"></th>
+                            <th width="200" rowspan="2"></th>
+                            <th width="190" rowspan="2" class="subject">Demo</th>
+                            <th colspan="2" class="subject">마케터</th>
+                            <!--<th width="160"></th>-->
+                            <th width="190" rowspan="2" class="subject">광고 대행사</th>
+                        </tr>
+                        <tr>
+                            <!--<th></th>-->
+                            <!--<th></th>-->
+                            <!--<th></th>-->
+                            <th width="190" class="subject">Startup</th>
+                            <th width="190" class="subject">Enterprise</th>
+                            <!--<th></th>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="6" class="title">Sphere 대시보드 사용관련</td>
+                            <td></td>
+                            <td colspan="3" class="white">분석 대시보드 사용</td>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                            <td rowspan="12" class="dark">별도 문의</td>
+                        </tr>
+                        <tr>
+                            <!--<td></td>-->
+                            <td class="second-title">Data On Boarding 지원</td>
+                            <td rowspan="7">해당 없음</td>
+                            <td colspan="2" class="white">Data On Boarding (SDK 지원)</td>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <!--<td></td>-->
+                            <td class="second-title">기본형 대시보드 서비스</td>
+                            <!--<td></td>-->
+                            <td class="white">기본형 대시보드</td>
+                            <td class="white">커스텀 대시보드 UI 제공</td>
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <!--<td></td>-->
+                            <td class="second-title">커스텀 대시보드 UI 제공</td>
+                            <!--<td></td>-->
+                            <td class="white"></td>
+                            <td class="white"></td>
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <!--<td></td>-->
+                            <td class="second-title">분석/제안 컨설팅 서비스</td>
+                            <!--<td></td>-->
+                            <td class="white">분석 컨설팅 월1회</td>
+                            <td class="white">분석 컨설팅 무제한</td>
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <!--<td></td>-->
+                            <td class="second-title">월 기본료</td>
+                            <!--<td></td>-->
+                            <td class="white">월 기본 10만원</td>
+                            <td class="white">월 100만원</td>
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <td rowspan="2"  class="title">추가 서비스</td>
+                            <td class="second-title">이벤트 태그 지원</td>
+                            <!--<td></td>-->
+                            <td class="white">10개 지원</td>
+                            <td class="white">50개 이하</td>
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <!--<td></td>-->
+                            <td class="second-title">Data On Boarding SDK 설치</td>
+                            <!--<td></td>-->
+                            <td colspan="2"  class="white"></td>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="title">데이터 활용 캠페인 운영</td>
+                            <td rowspan="3"></td>
+                            <td colspan="3">데이터 사용 수수료 7.5%</td>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                            <td colspan="3">최소 캠페인 예산 1,000만원</td>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        </tr>
+                        <tr>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                            <td colspan="3">캠페인 운영 수수료 17.5%</td>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        </tr>
+                        <tr class="last">
+                            <td class="title">계약 기간</td>
+                            <td></td>
+                            <td>해당 없음</td>
+                            <td colspan="2">1년</td>
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- //광고주 약정 사항 -->
+        
+    </div>
+    
+</body>
+</html>

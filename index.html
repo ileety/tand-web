@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=yes">
     <title>tan.D</title>
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
     <!--[if lt IE]><link rel="stylesheet" href="./css/style_ie.css" type="text/css"><![endif]-->
     <script>
@@ -58,19 +59,14 @@
         <div id="header" class="clearfix">
             <h1><a href=""><img src="./img/logo_tand_black.svg" alt="tan.D Logo"></a></h1>
             <div class="m-menu"></div>
-            <div class="gnb">
-                <ul class="clearfix">
+            <div class="nav">
+                <ul class="gnb clearfix">
                     <li><a href="#" id="aboutMenu">About</a></li>
                     <li><a href="#" id="productMenu">Product</a></li>
                     <li><a href="#" id="memberMenu">Member</a></li>
                     <li><a href="#" id="contactMenu">Contact</a></li>
                 </ul>
-            </div>
-            <div class="login">
-                <ul class="clearfix">
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">로그인</a></li>
-                </ul>
+                <div class="login"><a href="#">SPHERE 바로가기</a></div>
             </div>
         </div>
         <!-- //Header -->
@@ -198,60 +194,6 @@
             
             <hr>
             
-            <!-- Member -->
-            <div id="member">
-                <div class="wrap">
-                    <h2>Member</h2>
-                    <ul class="clearfix">
-                        <li>
-                            <div class="img-wrap"><img src="./img/chanung_kim.png" alt="김찬웅"></div>
-                            <p>글로벌에서 활약하는 데이터 플랫폼으로<br> 성장하는 그날까지!!!</p>
-                            <h4>김찬웅</h4>
-                            <h5>Founder / CEO</h5>
-                        </li>
-                        <li>
-                            <div class="img-wrap"><img src="./img/chiyoung_ham.png" alt="함치영"></div>
-                            <p>미래는 데이터가 기업 최고의 부가가치가 될것입니다.<br> 
-                            변화하는 세계에 필요한 기술을 유연하게<br> 
-                            대처할 수 있는 TAND를 꿈꿔봅니다.</p>
-                            <h4>함치영</h4>
-                            <h5>CTO</h5>
-                        </li>
-                        <li>
-                            <div class="img-wrap"><img src="./img/sangeun_kim.png" alt="김상은"></div>
-                            <p>일주일에 3일!! 대신 일해줄 로봇 구합니다.<br>
-                            없으면 만들고...</p>
-                            <h4>김상은</h4>
-                            <h5>Senior Developer</h5>
-                        </li>
-                        <li>
-                            <div class="img-wrap"><img src="./img/seungphil_huh.png" alt="허승필"></div>
-                            <p>살아 숨쉬는 데이터가 여기 tand에 한데 이터요.</p>
-                            <h4>허승필</h4>
-                            <h5>Data Analyst</h5>
-                        </li>
-                        <li>
-                            <div class="img-wrap"><img src="./img/jongsuk_jin.png" alt="진종석"></div>
-                            <p>BIG DATA 분석을 통해 전략 인사이트를 도출하고,<br> 
-                            실행 및 검토를 통한 마케팅 최적화를<br> 
-                            실현하고 싶습니다.</p>
-                            <h4>진종석</h4>
-                            <h5>Marketing Director</h5>
-                        </li>
-                        <li>
-                            <div class="img-wrap"><img src="./img/jongmin_lee.png" alt="이종민"></div>
-                            <p>많은 사람들에게 도움이 되는 서비스를 재미있게<br> 
-                            만들고 있습니다~ 같이 가요 우리~</p>
-                            <h4>이종민</h4>
-                            <h5>Business Development Dircetor</h5>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- //Member -->
-            
-            <hr>
-            
             <!-- Product -->
             <div id="product">
                 <div class="wrap">
@@ -303,145 +245,349 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h3>Price 정책</h3>
+                    
+                    <!-- 광고주 약정 사항 -->
+                    <div class="table-container">
+                        <h3>광고주 약정 사항</h3>
+                        <div class="view-table"><a href="table-client.html">광고주 약정 사항 보기</a></div>
                         <div class="table-wrap">
                             <table border="1" class="price-policy">
                                 <thead>
-                                    <tr class="subject">
-                                        <th width="112" rowspan="2"></th>
-                                        <th width="210" rowspan="2"></th>
-                                        <th width="138">Free</th>
-                                        <th width="138">Startup</th>
-                                        <th width="138">Pro</th>
-                                        <th width="138">Pro-</th>
-                                        <th width="138">Pro-Enterprise</th>
-                                        <th width="138">데이터 파트너 프리미엄</th>
+                                    <tr>
+                                        <th width="200" rowspan="2"></th>
+                                        <th width="200" rowspan="2"></th>
+                                        <th width="190" rowspan="2" class="subject">Demo</th>
+                                        <th colspan="2" class="subject">마케터</th>
+                                        <!--<th width="160"></th>-->
+                                        <th width="190" rowspan="2" class="subject">광고 대행사</th>
                                     </tr>
                                     <tr>
-                                        <th>무료</th>
-                                        <th>월 10만원 (5 User)</th>
-                                        <th>월 50만원</th>
-                                        <th>월 100만원</th>
-                                        <th>별도 협의</th>
-                                        <th>파트너 계약 시 무료</th>
+                                        <!--<th></th>-->
+                                        <!--<th></th>-->
+                                        <!--<th></th>-->
+                                        <th width="190" class="subject">Startup</th>
+                                        <th width="190" class="subject">Enterprise</th>
+                                        <!--<th></th>-->
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td rowspan="4"  class="title">Dashboards</td>
-                                        <td class="second-title">모바일 앱</td>
-                                        <td rowspan="4"><span class="yes">Yes</span></td>
-                                        <td rowspan="4"><span class="yes">Yes</span></td>
-                                        <td rowspan="4"><span class="yes">Yes</span></td>
-                                        <td rowspan="4"><span class="yes">Yes</span></td>
-                                        <td rowspan="4">Custom UI</td>
-                                        <td rowspan="4"><span class="yes">Yes</span></td>
-                                    </tr>
-                                    <tr class="second-title">
-                                        <td class="second-title">연관도 분석</td>
+                                        <td rowspan="6" class="title">Sphere 대시보드 사용관련</td>
+                                        <td></td>
+                                        <td colspan="3" class="white">분석 대시보드 사용</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <td rowspan="12" class="dark">별도 문의</td>
                                     </tr>
                                     <tr>
-                                        <td class="second-title">중복유저</td>
+                                        <!--<td></td>-->
+                                        <td class="second-title">Data On Boarding 지원</td>
+                                        <td rowspan="7">해당 없음</td>
+                                        <td colspan="2" class="white">Data On Boarding (SDK 지원)</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td class="second-title">설치패턴</td>
+                                        <!--<td></td>-->
+                                        <td class="second-title">기본형 대시보드 서비스</td>
+                                        <!--<td></td>-->
+                                        <td class="white">기본형 대시보드</td>
+                                        <td class="white">커스텀 대시보드 UI 제공</td>
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td rowspan="4" class="title">커스텀 분석</td>
-                                        <td class="second-title">타깃 Audience 제안(Excel)</td>
-                                        <td rowspan="4"><span class="no">No</span></td>
-                                        <td rowspan="3">광고주 수 1개</td>
-                                        <td rowspan="4">광고주 수 5개</td>
-                                        <td rowspan="4">무제한</td>
-                                        <td rowspan="4">API 지원 등</td>
-                                        <td rowspan="3">월간 리포트</td>
+                                        <!--<td></td>-->
+                                        <td class="second-title">커스텀 대시보드 UI 제공</td>
+                                        <!--<td></td>-->
+                                        <td class="white"></td>
+                                        <td class="white"></td>
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td class="second-title">유사 Audience 분석</td>
+                                        <!--<td></td>-->
+                                        <td class="second-title">분석/제안 컨설팅 서비스</td>
+                                        <!--<td></td>-->
+                                        <td class="white">분석 컨설팅 월1회</td>
+                                        <td class="white">분석 컨설팅 무제한</td>
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td class="second-title">고객 Audience 분석</td>
+                                        <!--<td></td>-->
+                                        <td class="second-title">월 기본료</td>
+                                        <!--<td></td>-->
+                                        <td class="white">월 기본 10만원</td>
+                                        <td class="white">월 100만원</td>
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td class="second-title">기타 Adhoc 조사</td>
-                                        <td><span class="no">No</span></td>
-                                        <td><span class="no">No</span></td>
+                                        <td rowspan="2"  class="title">추가 서비스</td>
+                                        <td class="second-title">이벤트 태그 지원</td>
+                                        <!--<td></td>-->
+                                        <td class="white">10개 지원</td>
+                                        <td class="white">50개 이하</td>
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td rowspan="3" class="title"></td>
-                                        <td class="second-title">데이터리스트 접속</td>
-                                        <td rowspan="2"><span class="yes">Yes</span></td>
-                                        <td rowspan="3"><span class="yes">Yes</span></td>
-                                        <td rowspan="3"><span class="yes">Yes</span></td>
-                                        <td rowspan="3"><span class="yes">Yes</span></td>
-                                        <td rowspan="3"><span class="yes">Yes</span></td>
-                                        <td rowspan="3"><span class="yes">Yes</span></td>
+                                        <!--<td></td>-->
+                                        <td class="second-title">Data On Boarding SDK 설치</td>
+                                        <!--<td></td>-->
+                                        <td colspan="2"  class="white"></td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td class="second-title">데이터 등록</td>
+                                        <td rowspan="3" class="title">데이터 활용 캠페인 운영</td>
+                                        <td rowspan="3"></td>
+                                        <td colspan="3">데이터 사용 수수료 7.5%</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td class="second-title">소유 데이터 다운로드</td>
-                                        <td><span class="no">No</span></td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <td colspan="3">최소 캠페인 예산 1,000만원</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr>
-                                        <td class="title">CAMPAIGN</td>
-                                        <td class="second-title"></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="title">ACCOUNT</td>
-                                        <td class="second-title"></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                        <td><span class="yes">Yes</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="title">광고집행 조건</td>
-                                        <td class="second-title">최소집행비용(매체비)</td>
-                                        <td>최소 월 500만원</td>
-                                        <td>최소 월 100만원</td>
-                                        <td>최소 월 500만원</td>
-                                        <td>제한없음</td>
-                                        <td>별도 협의</td>
-                                        <td>제한없음</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="title">수수료</td>
-                                        <td class="second-title">매체비 %</td>
-                                        <td>25%</td>
-                                        <td>25%</td>
-                                        <td>7.5%</td>
-                                        <td>7.5%</td>
-                                        <td>별도 협의</td>
-                                        <td>협의</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <td colspan="3">캠페인 운영 수수료 17.5%</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
                                     </tr>
                                     <tr class="last">
-                                        <td class="title">광고운영</td>
-                                        <td class="second-title"></td>
-                                        <td>텐디 운영대행</td>
-                                        <td>텐디 운영대행</td>
-                                        <td>협의</td>
-                                        <td>협의</td>
-                                        <td>별도 협의</td>
-                                        <td>협의</td>
+                                        <td class="title">계약 기간</td>
+                                        <td></td>
+                                        <td>해당 없음</td>
+                                        <td colspan="2">1년</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+                    <!-- //광고주 약정 사항 -->
+                    
+                    <!-- 데이터 파트너 약정 사항 -->
+                    <div class="table-container">
+                        <h3>데이터 파트너 약정 사항 <span>별도 문의 바랍니다.</span></h3>
+                        <div class="view-table"><a href="table-partner.html">데이터 파트너 약정 사항</a></div>
+                        <div class="table-wrap">
+                            <table border="1" class="price-policy">
+                                <thead>
+                                    <tr>
+                                        <th width="200" rowspan="2"></th>
+                                        <th width="200" rowspan="2"></th>
+                                        <th width="190" rowspan="2" class="subject">Demo</th>
+                                        <th colspan="2" class="subject">Closed 데이터 파트너쉽</th>
+                                        <!--<th width="112"></th>-->
+                                        <th colspan="3" class="subject">Open 데이터 파트너쉽</th>
+                                        <!--<th width="112"></th>-->
+                                        <!--<th width="112"></th>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<th></th>-->
+                                        <!--<th></th>-->
+                                        <!--<th></th>-->
+                                        <th width="112" class="subject"><span class="txt-small">100만 ADID 이하<br>(2달 누적)</span></th>
+                                        <th width="112" class="subject"><span class="txt-small">100만 ADID 이상<br>(2달 누적)</span></th>
+                                        <th width="112" class="subject"><span class="txt-small">100만 ADID 이하<br>(2달 누적)</span></th>
+                                        <th width="112" class="subject"><span class="txt-small">100만 ADID 이상<br>(2달 누적)</span></th>
+                                        <th width="112" class="subject"><span class="txt-small">500만 ADID 이상<br>(2달 누적)</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="6" class="title">Sphere 대시보드 사용관련</td>
+                                        <td class="second-title"></td>
+                                        <td colspan="6" class="white">분석 대시보드 사용</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<td></td>-->
+                                        <td class="second-title">Data On Boarding 지원</td>
+                                        <td rowspan="7">해당 없음</td>
+                                        <td colspan="5" rowspan="12"  class="dark">별도 문의</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<td></td>-->
+                                        <td class="second-title">기본형 대시보드 서비스</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<td></td>-->
+                                        <td class="second-title">커스텀 대시보드 UI 제공</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<td></td>-->
+                                        <td class="second-title">분석/제안 컨설팅 서비스</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<td></td>-->
+                                        <td class="second-title">분석/제안 컨설팅 서비스</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2" class="title">추가 서비스</td>
+                                        <td class="second-title">Data On Boarding SDK 설치 <span class="txt-small">(로그/이벤트/ 앱설치 데이터 수집)</span></td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<td></td>-->
+                                        <td class="second-title">이벤트 태그 지원</td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3" class="title">데이터 활용 캠페인 운영</td>
+                                        <td class="second-title"></td>
+                                        <td></td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<td></td>-->
+                                        <td class="second-title"></td>
+                                        <td></td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr>
+                                        <!--<td></td>-->
+                                        <td class="second-title"></td>
+                                        <td></td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                    <tr class="last">
+                                        <td class="title">계약 기간</td>
+                                        <td class="second-title">미니멈</td>
+                                        <td></td>
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //데이터 파트너 약정 사항 -->
+                    
                 </div>
             </div>
             <!-- //Product -->
+            
+            <hr>
+            
+            <!-- Member -->
+            <div id="member">
+                <div class="wrap">
+                    <h2>Member</h2>
+                    <ul class="clearfix">
+                        <li>
+                            <div class="img-wrap"><img src="./img/chanung_kim.png" alt="김찬웅"></div>
+                            <p>데이터 기반 마케팅을 쉽고 편하게 접근할 수 있는<br>
+                            서비스로 구축하겠습니다.<br>
+                            우수한 인재를 상시 채용하고 있으니 언제든 연락 주세요.</p>
+                            <h4>김찬웅</h4>
+                            <h5>Founder / CEO</h5>
+                            <p><a href="https://www.linkedin.com/in/chanung-kim-3153761a" target="_blank">See Connections</a></p>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/chiyoung_ham.png" alt="함치영"></div>
+                            <p>미래는 데이터가 기업 최고의 부가가치가 될것입니다.<br> 
+                            변화하는 세계에 필요한 기술을 유연하게<br> 
+                            대처할 수 있는 TAND를 꿈꿔봅니다.</p>
+                            <h4>함치영</h4>
+                            <h5>CTO</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/sangeun_kim.png" alt="김상은"></div>
+                            <p>일주일에 3일!! 대신 일해줄 로봇 구합니다.<br>
+                            없으면 만들고...</p>
+                            <h4>김상은</h4>
+                            <h5>Senior Developer</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/seungphil_huh.png" alt="허승필"></div>
+                            <p>데이터의, 데이터에 의한, 데이터를 위한 tan.D를 만들겠습니다.</p>
+                            <h4>허승필</h4>
+                            <h5>Data Analyst</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/jongsuk_jin.png" alt="진종석"></div>
+                            <p>BIG DATA 분석을 통해 전략 인사이트를 도출하고,<br> 
+                            실행 및 검토를 통한 마케팅 최적화를<br> 
+                            실현하고 싶습니다.</p>
+                            <h4>진종석</h4>
+                            <h5>Marketing Director</h5>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./img/jongmin_lee.png" alt="이종민"></div>
+                            <p>많은 사람들에게 도움이 되는 서비스를 재미있게<br> 
+                            만들고 있습니다~ 같이 가요 우리~</p>
+                            <h4>이종민</h4>
+                            <h5>Business Development Dircetor</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //Member -->
             
             <hr>
             

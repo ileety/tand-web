@@ -148,14 +148,17 @@ a {
     background: url(../img/logo_tand_white.svg) no-repeat;
 }
 #header a {
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #fff;
-    line-height: 26px;
+    line-height: 30px;
+}
+#header .nav {
+    float: right;
 }
 #header .gnb {
     float: left;
-    margin-left: 100px;
+    margin-right: 30px;
 }
 #header .gnb li {
     float: left;
@@ -168,29 +171,24 @@ a {
     text-decoration: underline;
 }
 #header .login {
-    float: right;
+    float: left;
     display: block;
 }
-#header .login li {
-    float: left;
-}
-#header .login li:first-child {
-    margin-right: 30px;
-}
-#header .login li a:hover {
+#header .login a:hover {
     text-decoration: underline;
 }
-#header .login li:last-child a {
+#header .login a {
     display: block;
-    height: 26px;
-    line-height: 26px;
+    height: 30px;
+    line-height: 30px;
     padding: 0 20px;
     background-color: #fff;
     color: #000;
     border-radius: 3px;
     font-size: 15px;
+    margin-left: 30px;
 }
-#header .login li:last-child a:hover {
+#header .login a:hover {
     text-decoration: none;
 }
 
@@ -198,7 +196,6 @@ a {
 #header.change {
     background-color: #fff;
     background-color: rgba(255,255,255,0.9);
-    border-bottom: 1px solid #ccc;
     transition: 1s;
 }
 #header.change h1 a {
@@ -207,7 +204,7 @@ a {
 #header.change a {
     color: #000;
 }
-#header.change .login li:last-child a {
+#header.change .login a {
     background-color: #001938;
     color: #fff;
 }
@@ -455,7 +452,8 @@ a {
 
 /* Member */
 #member {
-    background-color: #034784;
+    background: #034784 url(../img/img_member.jpg) no-repeat center;
+    background-size: cover;
     color: #fff;
 }
 #member h2 {
@@ -482,6 +480,7 @@ a {
     font-size: 14px;
     color: #33d3ff;
     font-style: italic;
+    margin-bottom: 5px;
 }
 #member ul li .img-wrap {
     width: 92px;
@@ -494,9 +493,27 @@ a {
     width: 92px;
     height: 92px;
 }
+#member ul li p a {
+    padding-left: 26px;
+    position: relative;
+    line-height: 20px;
+    color: #fff;
+}
+#member ul li p a:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/logo_linkedin.svg) no-repeat;
+    background-size: 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /* Product */
 #product {
+    background-color: #f5f5f5;
     line-height: 160%;
 }
 #product h3 {
@@ -611,28 +628,34 @@ a {
     font-weight: bold;
     margin-bottom: 240px;
 }
-.price-policy thead tr.subject th {
+.price-policy thead tr th.subject {
+    border: 1px solid #f5f5f5;
     font-size: 16px;
     font-weight: bold;
-    color: #0094D5;
-    vertical-align: top;
-    line-height: 120%;
-}
-.price-policy thead tr th  {
+    color: #fff;
     vertical-align: middle;
-    height: 30px;
-    color: #666;
-    text-align: left;
-    padding-left: 5px;
-    font-size: 14px;
+    line-height: 120%;
+    height: 50px;
+    text-align: center;
+    background-color: #ccc;
 }
 .price-policy tbody tr td.title {
     text-align: left;
     font-weight: bold;
     border-right: none;
+    color: #999;
 }
 .price-policy tbody tr td.second-title {
     text-align: left;
+    color: #999;
+}
+.price-policy tbody tr td.white {
+    background-color: #fff;
+}
+.price-policy tbody tr td.dark {
+    background-color: #bbb;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 .price-policy tbody tr {
     border-top: 1px solid #ccc;
@@ -645,7 +668,27 @@ a {
     height: 50px;
     text-align: center;
     border-right: 1px solid #ccc;
+    line-height: 110%;
 }
+.price-policy .txt-small {
+    font-size: 13px;
+}
+.table-container {
+    margin-bottom: 80px;
+}
+.table-container h3 span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #ff0000;
+    margin-left: 20px;
+}
+.price-policy thead tr th .txt-small {
+    word-spacing: -0.2em;
+}
+.view-table {
+    display: none;
+}
+/*
 .price-policy tbody tr td .yes {
     display: block;
     width: 25px;
@@ -666,6 +709,7 @@ a {
     background-size: 25px 25px;
     margin: 0 auto;
 }
+*/
 
 /* Contact */
 #contact .wrap h2 {
@@ -775,15 +819,12 @@ a {
         padding: 20px 30px;
     }
     #header h1 {
-        float: none;
+        float: left;
         width: 95px;
         height: 26px;
         margin: 0 auto;
     }
     #header .gnb {
-        display: none;
-    }
-    #header .login {
         display: none;
     }
     #header h1 a {
@@ -792,37 +833,15 @@ a {
     }
     #header a {
         color: #999;
-        line-height: 26px;
+        line-height: 30px;
     }
-    #header .login {
-        width: 100%;
-        padding-top: 50px;
-        background-color: #fff;
+    #header .login a {
+        background-color: #001938;
+        color: #fff;
     }
-    #header .login li {
-        float: none;
-    }
-    #header .login li a {
-        display: block;
-        text-align: center;
-        line-height: 50px;
-    }
-    #header .login li:first-child {
-        margin-right: 0;
-    }
-    #header .login li:last-child a {
-        border-top: none;
-        display: block;
-        height: auto;
-        line-height: 50px;
-        padding: 0;
-        background-color: none;
-        color: #999;
-        border-radius: 3px;
-        font-size: 15px;
-    }
-    #header .login li a:hover {
-        text-decoration: none;
+    #header.change .login a {
+        background-color: #001938;
+        color: #fff;
     }
 
     /* Header: 스크롤시 스타일 */
@@ -830,6 +849,7 @@ a {
         background-color: rgba(255,255,255,1.0);
         border-bottom: 1px solid #ccc;
     }
+/*
     #header .m-menu  {
         width: 23px;
         height: 23px;
@@ -838,6 +858,7 @@ a {
         top: 24px;;
         left: 26px;
     }
+*/
     .wrap {
         width: 100%;
         box-sizing: border-box;
@@ -1081,8 +1102,27 @@ a {
         margin-bottom: 240px;
     }
     .table-wrap {
-        width: 100%;
-        overflow-x: scroll;
+        display: none;
+    }
+    .table-container {
+        margin-bottom: 50px;
+    }
+    .table-container h3 {
+        display: none;
+    }
+    .view-table {
+        display: block;
+    }
+    .view-table a {
+        display: block;
+        width: 260px;
+        height: 65px;
+        line-height: 65px;
+        background-color: #0094D5;
+        color: #fff;
+        margin: 0 auto;
+        border-radius: 33px;
+        text-align: center;
     }
     .price-policy {
         width: 1150px;
