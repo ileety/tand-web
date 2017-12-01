@@ -236,7 +236,7 @@ a {
     display: block;
     width: 100px;
     height: 2px;
-    background-color: #e49958;
+    background-color: #0094D5;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -257,7 +257,7 @@ a {
     opacity: 0;
 }
 #mainVisual p strong {
-    color: #e49958;
+    color: #0094D5;
 }
 
 /* About */
@@ -267,6 +267,7 @@ a {
 .intro-wrap {
     padding: 80px 20px;
     background-color: #001938;
+    background: linear-gradient(#001938, #000e1f);
     color: #fff;
     line-height: 160%;
 }
@@ -674,7 +675,7 @@ a {
     font-size: 13px;
 }
 .table-container {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 .table-container h4 {
     font-size: 20px;
@@ -683,7 +684,7 @@ a {
     font-size: 14px;
     font-weight: normal;
     color: #ff0000;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .table-container h3 span {
     font-size: 14px;
@@ -721,6 +722,12 @@ a {
 */
 
 /* Contact */
+#contact {
+    background-color: #034784;
+    background: linear-gradient(#034784, #023a6b);
+    text-align: center;
+    color: #fff;
+}
 #contact .wrap h2 {
     margin-bottom: 30px;
 }
@@ -744,7 +751,7 @@ a {
 /* Footer */
 #footer {
     font-size: 14px;
-    background-color: #001938;
+    background-color: #222222;
 }
 #footer h3 {
     width: 80px;
